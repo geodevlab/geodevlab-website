@@ -1,0 +1,203 @@
+/**
+ * Use border-box box-sizing universally to ensure that borders and padding are
+ * always accounted for in dimension specifications.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(210, 50%, 99%);
+    /* background: url("../images/code-background.jpg"); */
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 2em 8em;
+    font-family: "PT_Serif", serif;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: "PT_Serif", serif;
+    font-size: 3em;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2em;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    color: hsl(210, 75%, 50%);
+    text-align: center;
+    border-top: 2px solid hsl(210, 75%, 50%);
+    border-bottom: 2px solid hsl(210, 75%, 50%);
+}
+
+
+.tagline {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+}
+
+/**
+ * Use flexbox to lay out the columns.
+ */
+.columns {
+    display: flex;
+}
+
+/**
+ * Define a half-width column.
+ */
+.column {
+    width: 50%;
+    padding: 8px 32px;
+    /* border: 1px solid #00ff00; */
+}
+
+/**
+ * Define a wide main column.
+ */
+.wide-column {
+    width: 65%;
+    padding: 8px 32px;
+    /* border: 1px solid #00ff00; */
+}
+
+/**
+ * Define a narrow side-column.
+ */
+.side-column {
+    width: 35%;
+    padding: 8px 32px;
+    /* border: 1px solid #00ff00; */
+}
+
+ul.skills {
+    list-style-type: "\25B6 ";
+}
+
+td.skill-category {
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+    text-align: right;
+}
+
+td.skill-items {
+    width: 60%;
+}
+
+span.skill-category {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+}
+
+ul.tag-list {
+    display: inline;
+    padding: 0;
+}
+
+ul.tag-list li {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.25em;
+    padding: 0.3em;
+    background-color: hsl(210, 50%, 60%);
+    color: hsl(0, 100%, 100%);
+    border-radius: 5% / 25%;
+}
+
+.contact-tel {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-email {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.job-employer {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.job-title {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.job-duration {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 65%);
+}
+
+.education-award {
+    font-weight: bold;
+}
+
+.education-place {
+    font-style: italic;
+}
+
+.education-duration {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 65%);
+}
+
+.certification {
+    display: flex;
+}
+
+.cert-icon img {
+    width: 32px;
+}
+
+.cert-name {
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+/**
+ */
+@media screen and (max-width: 1000px) {
+    /**
+     * Switch the main columns container to a column layout (columns are stacked
+     * on top of each other)
+     */
+    .columns {
+        flex-direction: column;
+    }
+    
+    /**
+     * Expand columns to full-width.
+     */
+    .column {
+        width: 100%;
+    }
+    
+    /**
+     * Reduce the body margins (they don't leave enough space for a readable
+     * column)
+     */
+    body {
+        margin: 1em 1em;
+    }
+}
+
