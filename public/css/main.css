@@ -21,7 +21,7 @@ body {
 
 h1 {
     font-family: "PT_Serif", serif;
-    font-size: 3em;
+    font-size: 4em;
     font-variant: small-caps;
     margin: 0;
 }
@@ -60,6 +60,15 @@ h2 {
  */
 .column {
     width: 50%;
+    padding: 8px 32px;
+    /* border: 1px solid #00ff00; */
+}
+
+/**
+ * Define a quarter-width column.
+ */
+.quarter-column {
+    width: 25%;
     padding: 8px 32px;
     /* border: 1px solid #00ff00; */
 }
@@ -104,6 +113,10 @@ span.skill-category {
     padding-left: 0.5em;
 }
 
+.tag-desc {
+    display: none;
+}
+
 ul.tag-list {
     display: inline;
     padding: 0;
@@ -131,6 +144,16 @@ ul.tag-list li {
     font-size: 1.2em;
 }
 
+.contact-github {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+img.header-photo {
+    width: 256px;
+    margin: 0 auto;
+}
+
 .job-employer {
     font-weight: bold;
     font-size: 1.2em;
@@ -144,7 +167,7 @@ ul.tag-list li {
 .job-duration {
     font-weight: bold;
     font-size: 0.9em;
-    color: hsl(0, 0%, 65%);
+    color: hsl(0, 0%, 60%);
 }
 
 .education-award {
@@ -158,7 +181,7 @@ ul.tag-list li {
 .education-duration {
     font-weight: bold;
     font-size: 0.9em;
-    color: hsl(0, 0%, 65%);
+    color: hsl(0, 0%, 60%);
 }
 
 .certification {
