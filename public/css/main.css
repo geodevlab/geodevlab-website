@@ -1,0 +1,347 @@
+/**
+ * Use border-box box-sizing universally to ensure that borders and padding are
+ * always accounted for in dimension specifications.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(130, 20%, 10%);
+    margin: 0 auto;
+    color: hsl(130, 95%, 95%);
+    background: url("../images/green-screen-bg.png");
+    background-origin: border-box;
+    background-repeat: repeat;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-shadow: 0 0 0.5em hsla(130, 95%, 95%, 0.25);
+}
+
+body.terminal {
+    font-family: "VT323", monospace;
+}
+
+body.modern {
+    font-family: "PT_Serif", serif;
+}
+
+h1 {
+    font-size: 4em;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: hsl(130, 95%, 95%);
+    color: hsl(130, 10%, 10%);
+    padding-left: 0.5em;
+    border-bottom: 2px solid hsl(210, 95%, 95%);
+    text-shadow: none;
+}
+
+p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a {
+    color: hsl(60, 100%, 50%);
+    background-color: hsl(130, 10%, 10%);
+}
+
+a:hover {
+    color: hsl(130, 10%, 10%);
+    background-color: hsl(60, 100%, 50%);
+}
+
+#logo {
+    text-align: center;
+    margin: 1em;
+}
+
+.tagline {
+    color: hsl(130, 80%, 65%);
+    text-align: center;
+    font-family: "VT323", monospace;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0 0 0.5em;
+    margin: 1em;
+}
+
+#switchFont {
+    color: hsl(130, 0%, 50%);
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em;
+}
+
+#switchFont:hover {
+    color: hsl(130, 0%, 75%);
+    cursor: pointer;
+}
+
+p.bio-heading {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+table.contact-info td {
+    padding: 0.2em;
+}
+
+.header {
+    display: flex;
+}
+
+/**
+ * Use flexbox to lay out the sections (Bio, Skills, Exp, etc.) in a column.
+ */
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+ * Use flexbox to lay out each section (eg. Bio) as a row. The leftmost part of
+ * the row is the section sidebar, which is followed by the section content.
+ */
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.section-sidebar {
+    font-family: "Rajdhani", sans-serif;
+    width: 12%;
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    background-color: hsl(130, 95%, 95%);
+    color: hsl(130, 10%, 10%);
+    padding: 0.5em;
+    border-bottom: 2px solid hsl(210, 95%, 95%);
+    text-shadow: none;
+}
+
+.section-content {
+    width: 88%;
+    font-size: 1em;
+    padding: 0.25em 1em;
+}
+
+#bio .section-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+#skills .section-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+p.skill-category {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/*
+p.skill-items {
+    width: 75%;
+}
+*/
+
+div.skill-items {
+    text-align: center;
+}
+
+ul.skills {
+    list-style-type: "\25B6 ";
+}
+
+td.skill-category {
+    width: 25%;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+    text-align: right;
+}
+
+/*
+td.skill-items {
+    width: 75%;
+}
+*/
+
+div.skill-items {
+    margin: 0 0 0.5em auto;
+}
+
+.tag-desc {
+    display: none;
+}
+
+ul.tag-list {
+    display: inline;
+    padding: 0;
+}
+
+/*
+ul.tag-list li {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.25em;
+    padding: 0.1em 0.25em;
+    background-color: hsl(120, 80%, 80%);
+    text-shadow: none;
+    box-shadow: 0 0 8px 1px hsla(120, 80%, 80%, 0.5);
+    color: hsl(130, 10%, 10%);
+}
+*/
+
+ul.tag-list li {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.15em;
+    padding: 0.01em 0.25em;
+    background-color: hsl(120, 80%, 80%);
+    text-shadow: none;
+    box-shadow: 0 0 8px 1px hsla(120, 80%, 80%, 0.5);
+    color: hsl(130, 10%, 10%);
+}
+.contact-tel {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-email {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-github {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+img.header-photo {
+    width: 256px;
+    margin: 0 auto;
+}
+
+.job-employer {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: hsl(120, 80%, 80%);
+}
+
+.job-title {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.job-duration {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 60%);
+}
+
+.education-subject {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    color: hsl(120, 80%, 80%);
+}
+
+.education-grade {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+}
+
+.education-place {
+    font-style: italic;
+}
+
+.education-duration {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 60%);
+}
+
+.certification {
+    display: flex;
+}
+
+.cert-icon img {
+    width: 64px;
+}
+
+.cert-name {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+/**
+ */
+@media screen and (max-width: 1000px) {
+    /**
+     * Make sections stack in columns instead of rows. This puts the sidebar at
+     * the top, instead of to the left.
+     */
+    .section {
+        flex-direction: column;
+    }
+
+    /**
+     * Stretch the sidebar to full width (as it's now the top bar of each
+     * section) and reduce the vertical padding so it's not so thick.
+     */
+    .section-sidebar {
+        width: 100%;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }
+    
+    /**
+     * Stack the skills columns on top of each other to give them more
+     * horizontal space.
+     */
+    #skills .section-content {
+        flex-direction: column;
+    }
+
+    /**
+     * Reduce the body margins (they don't leave enough space for a readable
+     * column) and allow the body to stretch to a wider width
+     */
+    body {
+        margin: 1em 1em;
+        width: 90%;
+    }
+}
+
