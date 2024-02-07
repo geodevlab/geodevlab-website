@@ -7,68 +7,58 @@
 <!doctype html>
 <html>
   <head>
-    <title>George Proctor &mdash; Server-Side Senior Developer with 10+ years web tech experience</title>
+    <title>George Proctor &mdash; Server-Side Developer with 10+ years web tech experience</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body class="modern">
-    <div id="main">
+    <div id="header">
       <div id="logo">
         <img src="images/geodevlab-pixel-logo-500.png" />
       </div>
-      <p class="tagline">Server-Side Developer with 10+ years web tech experience</p>
-        <!--
-        Photo removed for now
-        <div class="quarter-column">
-          <img src="images/gp-photo/gp-photo-exposure-desaturated-contrast.jpg" class="header-photo" />
-        </div>
-        -->
-      <!--
-      <p id="switchFont">Don't like the terminal font? Click here to switch to something more modern</p>
-      -->
+      <div class="tagline">Server-Side Developer with 10+ years web tech experience</div>
+    </div>
+    <div class="contact-info">
+      <div>
+        <strong>Phone</strong>
+        <img src="images/google-icons/phone_white_24dp.svg" width="24px" />
+        <a href="tel:+447935303465">+44 7935 303 465</a>
+      </div>
+      <div>
+        <strong>Email</strong>
+        <img src="images/google-icons/email_white_24dp.svg" width="24px" />
+        <a href="mailto:georgeproctorgp@gmail.com">georgeproctorgp@gmail.com</a>
+      </div>
+      <div>
+        <strong>Github</strong>
+        <img src="images/github-mark/github-mark-white.svg" width="24px" />
+        <a href="https://github.com/geodevlab">github.com/geodevlab</a>
+      </div>
+    </div>
       <div class="sections">
         <div class="section" id="bio">
-          <div class="section-sidebar">
+          <div class="section-header">
             BIO
           </div>
           <div class="section-content">
             <div class="bio-column">
-              <p class="bio-heading">George Proctor</p>
-              <br />
-              <p>I'm an experienced and passionate coder and software developer with many years of experience in programming and software engineering. I love to tackle interesting engineering challenges, and am always on the lookout for effective ways to solve problems. I believe in creating robust, well-structured, well-tested code solutions that can outlast the developer who created them, and strongly support collaboration and sharing among members of a development team.</p>
-              <br />
-              <p>I've personally led development teams in the past and created support frameworks and tooling to get new developers up-to-speed on new projects.</p>
-              <br />
-              I love to code as a personal hobby too, with a particular interest in retrocomputing and home computers of the 8-bit and 16-bit eras.</p>
-              <br />
-              Contact me:
-              <br />
-              <table class="contact-info">
-                <tr>
-                  <td><strong>Phone</strong></td>
-                  <td><img src="images/google-icons/phone_white_24dp.svg" width="24px" /></td>
-                  <td><a href="tel:+447935303465">+44 7935 303 465</a></td>
-                </tr>
-                <tr>
-                  <td><strong>Email</strong></td>
-                  <td><img src="images/google-icons/email_white_24dp.svg" width="24px" /></td>
-                  <td><a href="mailto:georgeproctorgp@gmail.com">georgeproctorgp@gmail.com</a></td>
-                </tr>
-                <tr>
-                  <td><strong>Github</strong></td>
-                  <td><img src="images/github-mark/github-mark-white.svg" width="24px" /></td>
-                  <td><a href="https://github.com/geodevlab">github.com/geodevlab</a></td>
-                </tr>
-              </table>
+              <img src="images/gp-photo/gp-photo-exposure-desaturated-contrast.jpg" class="header-photo" />
             </div>
             <div class="bio-column">
-              <img src="images/gp-photo/gp-photo-exposure-desaturated-contrast.jpg" class="header-photo" />
+              <p class="bio-heading">George Proctor</p>
+              <p>I'm an experienced and passionate <em>coder</em> and <em>software developer</em> with many years of experience in programming and software engineering.</p>
+              <p>I love to tackle interesting <em>engineering challenges</em>, and am always on the lookout for effective ways to solve problems.</p>
+              <p>I believe in creating <em>robust, well-structured, well-tested code solutions</em> that can <em>outlast the developer who created them</em>, and strongly support <em>collaboration and sharing</em> among members of a development team.</p>
+              <p>I've personally led development teams in the past and created <em>support frameworks and tooling</em> to get new developers up-to-speed on new projects.</p>
+              <p>I love to code as a <em>personal hobby</em> too, with a particular interest in <em>retrocomputing</em> and home computers of the <em>8-bit and 16-bit eras</em>.</p>
+              <p>If you're looking for an experienced engineer with a <em>wide and varied knowledge base</em> and a <em>commitment to coding excellence</em>, give me a call! Contact details are at the top.</p>
             </div>
           </div>
         </div>
         <div class="section" id="skills">
-          <div class="section-sidebar">
+          <div class="section-header">
             SKILLS
           </div>
           <div class="section-content">
@@ -162,6 +152,7 @@
                   <li title="Amazon Simple Storage Service">S3</li>
                   <li title="Amazon Relational Database Service">RDS</li>
                   <li>DocumentDB</li>
+                  <li>Route 53</li>
                 </ul>
               </div>
             </div>
@@ -245,215 +236,11 @@
                 </ul>
               </div>
             </div>
-          <!--
-          <table>
-            <tr>
-              <td class="skill-category">
-                PHP
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li data-tag-id="zend-framework">Zend Framework</li>
-                  <li>Laminas</li>
-                  <li>Apigility</li>
-                </ul>
-                <br />
-                <p class="tag-desc" data-tag-id="zend-framework"><strong>Zend Framework:</strong> A PHP application framework developed by the creators of PHP, now superseded by Laminas.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Python
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Flask</li>
-                  <li>werkzeug</li>
-                  <li>SQLAlchemy</li>
-                  <li>Alembic</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Other languages
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Lua</li>
-                  <li>JavaScript</li>
-                  <li>6502 assembly</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                APIs
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>OpenAPI/Swagger</li>
-                  <li>Postman</li>
-                  <li>cURL</li>
-                  <li>JSON Schema</li>
-                  <li title="Representational State Transfer">REST</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Security
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li title="Open Worldwide Application Security Project">OWASP</li>
-                  <li title="Security Assertion Markup Language">SAML</li>
-                  <li title="JSON Web Tokens">JWT</li>
-                  <li>OAuth</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Virtualization
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Docker</li>
-                  <li title="Amazon Elastic Container Registry">Amazon ECR</li>
-                  <li>Vagrant</li>
-                  <li>Ansible</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Devtools
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>PHPStorm</li>
-                  <li>PyCharm</li>
-                  <li>vim</li>
-                  <li>Xdebug</li>
-                  <li>Eclipse</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Cloud
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li title="Amazon Web Services Command Line Interface">AWS CLI</li>
-                  <li title="Amazon Elastic Compute Cloud">EC2</li>
-                  <li title="Amazon Simple Queue Service">SQS</li>
-                  <li title="Amazon Simple Storage Service">S3</li>
-                  <li title="Amazon Relational Database Service">RDS</li>
-                  <li>DocumentDB</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Testing
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>PHPUnit</li>
-                  <li>Mockery</li>
-                  <li title="Behaviour-Driven Development">BDD</li>
-                  <li>Behat</li>
-                  <li>Gherkin</li>
-                  <li>Chromedriver</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Version Control
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>GitLab</li>
-                  <li>Bitbucket</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Webserver
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Apache</li>
-                  <li>nginx</li>
-                  <li>Redis</li>
-                  <li title="Web Server Gateway Interface">WSGI</li>
-                  <li>Gunicorn</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Linux
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Bash</li>
-                  <li>Ubuntu</li>
-                  <li>Arch</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                CI and Deployment
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Jenkins</li>
-                  <li>Apache Ant</li>
-                  <li>Doctrine Migrations</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                Project Management
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Agile</li>
-                  <li>Scrum</li>
-                  <li>Jira</li>
-                  <li>Rally</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="skill-category">
-                HR
-              </td>
-              <td class="skill-items">
-                <ul class="tag-list">
-                  <li>Interviewing</li>
-                  <li>Onboarding</li>
-                  <li>Training</li>
-                  <li>Mentoring</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-          -->
           </div>
         </div>
         <div class="section">
-          <div class="section-sidebar">
-            EXP
+          <div class="section-header">
+            EXPERIENCE
           </div>
           <div class="section-content">
             <ul>
@@ -484,8 +271,8 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-sidebar">
-            EDU
+          <div class="section-header">
+            EDUCATION
           </div>
           <div class="section-content">
             <ul>
@@ -506,8 +293,8 @@
         </div>
 
         <div class="section">
-          <div class="section-sidebar">
-            CERTS
+          <div class="section-header">
+            CERTIFICATION AND TRAINING
           </div>
           <div class="section-content">
             <div class="certification">
@@ -523,20 +310,83 @@
         </div>
 
         <div class="section">
-          <div class="section-sidebar">
-            INTS
+          <div class="section-header">
+            VOLUNTEERING
           </div>
           <div class="section-content">
             <ul>
-              <li>Programming, mathematics, theory of computing</li>
-              <li>Retrocomputing &mdash; 8-bit and 16-bit eras</li>
-              <li>Electronic music, audio synthesis, chiptunes</li>
-              <li>Artificial life, cellular automata, genetic algorithms</li>
-              <li>Nature, wildlife, ornithology</li>
+              <li>
+                Volunteer for Essex Wildlife Trust, <a href="https://www.essexwt.org.uk/nature-reserves/bedfords">Bedfords Park Nature Discovery Center</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div><h2>References available on request</h2></div>
+        <div id="interests" class="section">
+          <div class="section-header">
+            INTERESTS
+          </div>
+          <div class="section-content">
+            <div class="interest-item">
+              <span class="material-symbols-outlined">terminal</span>
+              <p>Coding</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">function</span>
+              <p>Mathematics</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">auto_transmission</span>
+              <p>Theory of computing</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">sim_card</span>
+              <p>History of computing</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">gradient</span>
+              <p>Retrocomputing</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">graphic_eq</span>
+              <p>Electronic music</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">tune</span>
+              <p>Audio synthesis</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">memory</span>
+              <p>Chiptunes</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">blur_on</span>
+              <p>Artificial life</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">background_grid_small</span>
+              <p>Cellular automata</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">family_history</span>
+              <p>Genetic algorithms</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">forest</span>
+              <p>Nature</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">emoji_nature</span>
+              <p>Wildlife</p>
+            </div>
+            <div class="interest-item">
+              <span class="material-symbols-outlined">raven</span>
+              <p>Ornithology</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          References available on request
+        </div>
       </div> <!-- sections -->
     </div> <!-- main -->
   </body>

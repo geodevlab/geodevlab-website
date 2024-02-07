@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 (2024-02-07)
+* Change color scheme to gold
+* Add volunteering section
+* Update bio
+* Change interests section to grid list with icons
+
 ## 1.3.0 (2023-10-31)
 * Enable photo
 * Write bio
